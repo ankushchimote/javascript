@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blue{
+            padding: 40px;
+            background-color: blue;
+        }
+        #green{
+            padding: 40px;
+            background-color: green;
+        }
+        #yellow{
+            padding: 40px;
+            background-color: yellow;
+        }
+        #red{padding: 40px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="blue"></button>
+    <button id="green"></button>
+    <button id="yellow"></button>
+    <button id="red"></button>
+    
+</body>
+
+<script>
+
+    const b = function(){
+        document.body.style.backgroundColor = 'blue'
+    }
+    const g = function(){
+        document.body.style.backgroundColor = 'green'
+    }
+    const y = function(){
+        document.body.style.backgroundColor = 'yellow'
+    }
+    const r = function(){
+        document.body.style.backgroundColor = 'red'
+    }
+    document.querySelector('#blue').addEventListener('click', b)
+    document.querySelector('#green').addEventListener('click', g)
+    document.querySelector('#yellow').addEventListener('click', y)
+    document.querySelector('#red').addEventListener('click', r)
+</script>
+</html>
